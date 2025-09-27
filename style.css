@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+             font-family: 'montserrat', sans-serif;
+            background-color: #f2f8ff; 
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background: linear-gradient(
+                to bottom,
+                #f2f8ff 0%,
+                #f2f8ff 75%,
+                #4542ff 100%
+            );
+            width: 100%;
+            max-width: 100%;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 0 0 50px 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .top-logo {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            z-index: 10; 
+        }
+        
+        .top-logo img {
+            max-width: 120px;
+            height: auto;
+        }
+
+
+        .mainlogo img {
+            max-width: none; 
+            width: 500px; 
+            height: auto;
+        }
+  
+
+.mainlogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 30px));
+    z-index: 0;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    animation: fadeInUpAndCenter 1.5s ease-out 0.5s forwards;
+}
+
+
+        @keyframes fadeInUpAndCenter {
+            from {
+                opacity: 0;
+                transform: translate(-50%, calc(-50% + 20px));
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+
+.btn {
+    background: transparent;
+    position: absolute; 
+    top: 60%;
+    left: 50%; 
+    transform: translate(-50%, 0);
+    margin-top: 50px;
+    z-index: 1; 
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(40, 144, 241);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(14, 14, 15);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+}
+.btn:hover {
+  color: #001f47;
+  border: 1px solid rgb(40, 144, 241);
+}
+
+btn1:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+}
+.about .button1{
+    background: transparent;
+    position: relative;
+    top: 60%;
+    left: 50%; 
+    transform: translate(-50%, 0);
+    margin-top: 50px;
+    z-index: 1; 
+     padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 200;
+    border: 1px solid rgb(40, 144, 241);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+}
+
+
+        .reg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        .form-card {
+            background-color: #acadff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 1000px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .form-card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4542ff;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #4542ff;
+        }
+
+        .submit-btn {
+            margin: 30px auto;
+            margin-top: 20px;
+            position: static;
+            transform: none;
+            font-size: 1.25rem;
+            color: #fff;
+            background-color: #4542ff;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #3532e0;
+        }
+#registration-form {
+    max-width: 500px; /* or any size you want */
+    width: 100%;
+}
+/* Radio button group styling */
+.form-group.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group.radio-group label {
+    margin-bottom: 10px; /* space between the label and radio buttons */
+    font-weight: 600;
+    color: #333;
+}
+
+/* Style individual radio options */
+.form-group.radio-group .radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #4542ff;
+    cursor: pointer;
+}
+
+/* Hide default radio circle */
+.form-group.radio-group input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4542ff;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Checked state */
+.form-group.radio-group input[type="radio"]:checked::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #4542ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+/* Hover effect */
+.form-group.radio-group input[type="radio"]:hover {
+    border-color: #3532e0;
+}
+
+
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .top-logo img {
+                max-width: 100px;
+            }
+            .mainlogo img {
+                width: 350px; /* Adjust main logo for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main {
+                padding: 15px;
+            }
+            .top-logo img {
+                max-width: 70px; /* Make side logos smaller on mobile */
+            }
+            .mainlogo img {
+                width: 280px; /* Make main logo smaller on mobile */
+            }
+        }
+
+        
