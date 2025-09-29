@@ -3,125 +3,581 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highsec|2025</title>
+    <title>HIGHSEC 2025 - MSM Student Conference</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <section class="header">
-    <div class="main">
-        <div class="top-logo">
-            <div class="pacisa">
-               
-                <img src="img/pachisa.png" alt="Pachisa Logo">
-            </div>
-            <div class="msmlogo">
-            
-                <img src="img/msmlogo.png" alt="MSM Logo">
-            </div>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
         </div>
-        <div class="mainlogo style="animation-delay: 0.5s;">
-           
-            <img src="img/main.png" alt="Main Logo">
+        <div class="progress-info">
+            <span class="progress-text">Registration Progress</span>
+            <span class="xp-counter">XP: <span id="xpCount">0</span>/100</span>
         </div>
-        <a href="index.html#register">
-        <button class="btn">
-    <span>Register Here</span>
-</button></a>
     </div>
-</section>
 
-
-<section class="about">
-<button class="button1">
-    About Highsec
-</button>
-<p> The text extracted from the image is:
-
-HIGHSEC is a high school and higher secondary student conference held annually at the district level. It serves as a platform to 
-address the challenges faced by adolescents in the modern era and propose constructive solutions,
- inspiring students to join a community of goodness. This year MSM VALAVANNUR ZONE conducting
-  HIGHSECs at Oct 2,2025 Thursday at Ansar Arabic College Auditorium, Valavannur
-</p>
-
-</section>
-
-
-<section class="reg" id="register">
-            <form id="registration-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="logo-section">
+                    <div class="partner-logos">
+                        <img src="img/pachisa.png" alt="Pachisa Logo" class="partner-logo">
+                        <img src="img/msmlogo.png" alt="MSM Logo" class="partner-logo">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
+                
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-main">HIGHSEC</span>
+                        <span class="title-year">2025</span>
+                    </h1>
+                    <p class="hero-subtitle">MSM Student Conference</p>
+                    <p class="hero-description">Join the most inspiring Islamic conference for students. Learn, grow, and connect with like-minded peers.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="registeredCount">0</span>
+                            <span class="stat-label">Students Registered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Oct 2</span>
+                            <span class="stat-label">Event Date</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Valavannur</span>
+                            <span class="stat-label">Location</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="wa-number">WhatsApp Number</label>
-                    <input type="tel" id="wa-number" name="wa-number">
+                
+                <div class="hero-actions">
+                    <a href="#register" class="cta-button">
+                        <span class="btn-text">Start Registration</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <p class="urgency-text">Limited spots available!</p>
                 </div>
-                <div class="form-group">
-                    <label for="class">Class</label>
-                    <input type="number" id="class" name="class" required>
-                </div>
-                <div class="form-group">
-                    <label for="institute">Educational Institute</label>
-                    <input type="text" id="institute" name="institute" required>
-                </div>
-                <div class="form-group">
-                    <label for="unit">Unit</label>
-                    <input type="text" id="unit" name="unit" required>
-                </div>
-                <div class="form-group radio-group">
-    <label>Gender</label>
-    <label class="radio-option">
-        <input type="radio" name="gender" value="Male" required> Male
-    </label>
-    <label class="radio-option">
-        <input type="radio" name="gender" value="Female" required> Female
-    </label>
-</div>
-            <button type="submit" class="btn submit-btn">Submit</button>
-            </form>
-</section>
+            </div>
+        </div>
+    </section>
 
-    <section class="footer">
-        <div class="copyright">
-    copyright © MSM VALAVANNUR . All right are reserved 
-</div>
- <div class="social">
-        <a href="https://www.youtube.com/@msmvalavannur" target="_blank"><i class="ri-youtube-line"></i></a>
-        <a href="https://tr.ee/zaCnac-Bw_"target="_blank"><i class="ri-instagram-line"></i></a>
-        <a href="https://tr.ee/BqSCC3xuXd"target="_blank"><i class="ri-facebook-line"></i></a>
-    </div> 
+
+    <!-- Event Details Section -->
+    <section class="event-details-section" id="details">
+        <div class="container">
+            <h2 class="section-title">Event Details</h2>
+            <div class="event-card">
+                <div class="event-info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-calendar-line"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Date & Time</h3>
+                            <p>October 2, 2025</p>
+                            <p class="info-sub">Thursday, 8:30 AM - 12:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Venue</h3>
+                            <p>Ansar Arabic College Auditorium</p>
+                            <p class="info-sub">Valavannur</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-group-line"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Organizer</h3>
+                            <p>MSM VALAVANNUR ZONE</p>
+                            <p class="info-sub">MSM Student Organization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Registration Section -->
+    <section class="registration-section" id="register">
+        <div class="container">
+            <div class="reg-header">
+                <h2 class="reg-title">Complete Your Registration</h2>
+                <p class="reg-subtitle">Fill in your details to join HIGHSEC 2025</p>
+                
+                <!-- Quest Progress -->
+                <div class="quest-progress">
+                    <div class="quest-step completed" data-step="1">
+                        <div class="step-icon">1</div>
+                        <div class="step-label">Personal Info</div>
+                    </div>
+                    <div class="quest-step" data-step="2">
+                        <div class="step-icon">2</div>
+                        <div class="step-label">Education</div>
+                    </div>
+                    <div class="quest-step" data-step="3">
+                        <div class="step-icon">3</div>
+                        <div class="step-label">Final Details</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-card">
+                <form id="registration-form">
+                    <!-- Step 1: Personal Information -->
+                    <div class="form-step" data-step="1">
+                        <div class="step-header">
+                            <h3>Personal Information</h3>
+                            <div class="xp-reward">+30 XP</div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                <div class="field-hint">As it appears on your ID card</div>
+                                <div class="xp-indicator">+10 XP</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                                <div class="field-hint">Primary contact number</div>
+                                <div class="xp-indicator">+10 XP</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="wa-number">WhatsApp Number</label>
+                                <input type="tel" id="wa-number" name="wa-number" placeholder="Enter your WhatsApp number">
+                                <div class="field-hint">Optional - for event updates</div>
+                                <div class="xp-indicator">+5 XP</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="class">Class <span class="required">*</span></label>
+                                <input type="number" id="class" name="class" required placeholder="Enter your class" min="1" max="12">
+                                <div class="field-hint">Your current class/grade</div>
+                                <div class="xp-indicator">+10 XP</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Educational Details -->
+                    <div class="form-step" data-step="2">
+                        <div class="step-header">
+                            <h3>Educational Details</h3>
+                            <div class="xp-reward">+30 XP</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="institute">Educational Institute <span class="required">*</span></label>
+                            <input type="text" id="institute" name="institute" required placeholder="Enter your school/college name">
+                            <div class="field-hint">Name of your current school or college</div>
+                            <div class="xp-indicator">+10 XP</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="unit">Unit <span class="required">*</span></label>
+                            <input type="text" id="unit" name="unit" required placeholder="Enter your unit">
+                            <div class="field-hint">Your organizational unit or department</div>
+                            <div class="xp-indicator">+10 XP</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Final Details -->
+                    <div class="form-step" data-step="3">
+                        <div class="step-header">
+                            <h3>Final Details</h3>
+                            <div class="xp-reward">+30 XP</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender <span class="required">*</span></label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select your gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <div class="field-hint">Please select your gender</div>
+                            <div class="xp-indicator">+10 XP</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <div class="form-note">
+                            <p><span class="required">*</span> Required fields</p>
+                            <p>By submitting this form, you agree to our terms and conditions.</p>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Complete Registration</span>
+                            <span class="btn-icon">✓</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
 
 <script>
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwcTIhyRpfVvMsfTnxMBj-N72eTxKhQGNTPdcpM9ALnQlYkZK3iVvkwX3HZLxmSZ21DFQ/exec";
 
+// Gamification variables
+let currentXP = 0;
+let totalXP = 100;
+let currentStep = 1;
+let fieldXP = 0; // Track XP from individual fields (max 90)
+let bonusXP = 0; // Track bonus XP from submission (10)
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    initializeGamification();
+    updateRegisteredCount();
+    setupFormValidation();
+});
+
+// Initialize gamification features
+function initializeGamification() {
+    const form = document.getElementById('registration-form');
+    const inputs = form.querySelectorAll('input, select');
+    
+    inputs.forEach(input => {
+        input.addEventListener('input', function() {
+            updateFieldXP();
+            updateQuestSteps();
+        });
+        
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+    });
+}
+
+// Update XP based on filled fields
+function updateFieldXP() {
+    const form = document.getElementById('registration-form');
+    const requiredFields = form.querySelectorAll('input[required], select[required]');
+    const optionalFields = form.querySelectorAll('input:not([required]), select:not([required])');
+    
+    let filledRequired = 0;
+    let filledOptional = 0;
+    
+    // Count filled required fields
+    requiredFields.forEach(field => {
+        if (field.value.trim() !== '') {
+            filledRequired++;
+        }
+    });
+    
+    // Count filled optional fields
+    optionalFields.forEach(field => {
+        if (field.value.trim() !== '') {
+            filledOptional++;
+        }
+    });
+    
+    // Calculate XP: 10 XP per required field (max 60), 5 XP per optional field (max 30)
+    const requiredXP = Math.min(filledRequired * 10, 60);
+    const optionalXP = Math.min(filledOptional * 5, 30);
+    
+    fieldXP = requiredXP + optionalXP;
+    currentXP = fieldXP + bonusXP;
+    
+    document.getElementById('xpCount').textContent = currentXP;
+    updateProgressBar();
+}
+
+// Add bonus XP (for submission)
+function addBonusXP(amount) {
+    bonusXP = amount;
+    currentXP = fieldXP + bonusXP;
+    document.getElementById('xpCount').textContent = currentXP;
+    updateProgressBar();
+    showXPGain(amount);
+}
+
+// Update progress bar
+function updateProgressBar() {
+    const progress = (currentXP / totalXP) * 100;
+    document.getElementById('progressFill').style.width = progress + '%';
+}
+
+// Update quest steps
+function updateQuestSteps() {
+    const form = document.getElementById('registration-form');
+    const requiredFields = form.querySelectorAll('input[required], select[required]');
+    const filledRequired = Array.from(requiredFields).filter(field => field.value.trim() !== '');
+    const progress = (filledRequired.length / requiredFields.length) * 100;
+    
+    const steps = document.querySelectorAll('.quest-step');
+    const stepProgress = Math.ceil(progress / 33.33);
+    
+    steps.forEach((step, index) => {
+        if (index < stepProgress) {
+            step.classList.add('completed');
+            step.querySelector('.step-icon').textContent = '✓';
+        }
+    });
+}
+
+// Show XP gain animation
+function showXPGain(amount) {
+    const xpGain = document.createElement('div');
+    xpGain.className = 'xp-gain';
+    xpGain.textContent = `+${amount} XP`;
+    xpGain.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: bold;
+        z-index: 1000;
+        animation: xpGainAnimation 2s ease-out forwards;
+    `;
+    
+    document.body.appendChild(xpGain);
+    
+    setTimeout(() => {
+        xpGain.remove();
+    }, 2000);
+}
+
+// Update registered count with animation
+function updateRegisteredCount() {
+    const targetCount = Math.floor(Math.random() * 100) + 30;
+    const countElement = document.getElementById('registeredCount');
+    
+    let currentCount = 0;
+    const increment = targetCount / 100;
+    
+    const counter = setInterval(() => {
+        currentCount += increment;
+        if (currentCount >= targetCount) {
+            currentCount = targetCount;
+            clearInterval(counter);
+        }
+        countElement.textContent = Math.floor(currentCount);
+    }, 50);
+}
+
+// Setup form validation
+function setupFormValidation() {
+    const form = document.getElementById('registration-form');
+    const inputs = form.querySelectorAll('input[required], select[required]');
+    
+    inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+        
+        input.addEventListener('input', function() {
+            if (this.style.borderColor === 'rgb(239, 68, 68)') {
+                this.style.borderColor = '#e5e7eb';
+            }
+        });
+    });
+}
+
+// Validate individual field
+function validateField(field) {
+    if (field.value.trim() === '') {
+        field.style.borderColor = '#ef4444';
+        return false;
+    } else {
+        field.style.borderColor = '#10b981';
+        return true;
+    }
+}
+
+// Enhanced form submission with gamification
 document.getElementById("registration-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const form = e.target;
+  const submitBtn = form.querySelector('.submit-btn');
+  const originalText = submitBtn.innerHTML;
+  
+  // Show loading state
+  submitBtn.innerHTML = '<span class="btn-text">Submitting...</span><span class="btn-icon">⏳</span>';
+  submitBtn.classList.add('loading');
+  submitBtn.disabled = true;
+  
   const formData = new FormData(form);
+  
   try {
-    const response = await fetch(SCRIPT_URL, { method: "POST", body: formData });
+    const response = await fetch(SCRIPT_URL, { 
+      method: "POST", 
+      body: formData 
+    });
     const result = await response.json();
+    
     if (result.status === "success") {
-      alert("✅ Registration submitted!");
-      form.reset();
+      // Success state with celebration
+      addBonusXP(10); // Bonus XP for completion (reaches 100)
+      submitBtn.innerHTML = '<span class="btn-text">🎉 Registration Complete!</span><span class="btn-icon">✓</span>';
+      submitBtn.classList.remove('loading');
+      submitBtn.classList.add('success');
+      
+      // Show success notification
+      showNotification('🎉 Registration successful! Welcome to HIGHSEC 2025!', 'success');
+      
+      // Reset form after delay
+      setTimeout(() => {
+        form.reset();
+        submitBtn.innerHTML = originalText;
+        submitBtn.classList.remove('success');
+        submitBtn.disabled = false;
+        currentXP = 0;
+        fieldXP = 0;
+        bonusXP = 0;
+        updateProgressBar();
+        document.getElementById('xpCount').textContent = '0';
+      }, 5000);
     } else {
-      alert("❌ Error: " + result.message);
+      throw new Error(result.message || 'Registration failed');
     }
   } catch (err) {
-    alert("⚠️ Network error: " + err.message);
+    // Error state
+    submitBtn.innerHTML = '<span class="btn-text">❌ Try Again</span><span class="btn-icon">🔄</span>';
+    submitBtn.classList.remove('loading');
+    submitBtn.classList.add('error');
+    
+    // Reset button after delay
+    setTimeout(() => {
+      submitBtn.innerHTML = originalText;
+      submitBtn.classList.remove('error');
+      submitBtn.disabled = false;
+    }, 3000);
+    
+    // Show error notification
+    showNotification('❌ Registration failed. Please try again.', 'error');
   }
+});
+
+// Enhanced notification system
+function showNotification(message, type) {
+  // Remove existing notifications
+  const existingNotification = document.querySelector('.notification');
+  if (existingNotification) {
+    existingNotification.remove();
+  }
+  
+  // Create notification element
+  const notification = document.createElement('div');
+  notification.className = `notification notification-${type}`;
+  notification.innerHTML = `
+    <div class="notification-content">
+      <span class="notification-icon">${type === 'success' ? '✅' : '❌'}</span>
+      <span class="notification-message">${message}</span>
+    </div>
+  `;
+  
+  // Add styles
+  notification.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: ${type === 'success' ? 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)' : 'linear-gradient(135deg, #f56565 0%, #e53e3e 100%)'};
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    font-weight: 500;
+  `;
+  
+  document.body.appendChild(notification);
+  
+  // Animate in
+  setTimeout(() => {
+    notification.style.transform = 'translateX(0)';
+  }, 100);
+  
+  // Auto remove after 5 seconds
+  setTimeout(() => {
+    notification.style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      if (notification.parentNode) {
+        notification.remove();
+      }
+    }, 300);
+  }, 5000);
+}
+
+// Add smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Add form validation feedback
+const form = document.getElementById('registration-form');
+const inputs = form.querySelectorAll('input[required]');
+
+inputs.forEach(input => {
+  input.addEventListener('blur', function() {
+    if (this.value.trim() === '') {
+      this.style.borderColor = '#f56565';
+    } else {
+      this.style.borderColor = '#48bb78';
+    }
+  });
+  
+  input.addEventListener('input', function() {
+    if (this.style.borderColor === 'rgb(245, 101, 101)') {
+      this.style.borderColor = '#e2e8f0';
+    }
+  });
 });
 </script>
 
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>© 2025 MSM VALAVANNUR. All rights reserved</p>
+                </div>
+                <div class="social">
+                    <a href="https://www.youtube.com/@msmvalavannur" target="_blank" aria-label="YouTube">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                    <a href="https://tr.ee/zaCnac-Bw_" target="_blank" aria-label="Instagram">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://tr.ee/BqSCC3xuXd" target="_blank" aria-label="Facebook">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
