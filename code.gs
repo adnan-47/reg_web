@@ -1,6 +1,6 @@
 function doPost(e) {
   try {
-    var ss = SpreadsheetApp.openById("1Tt2IjD42mTSSE-hMe4cONa3AGVkIXynSKm9wMvltKa8"); 
+    var ss = SpreadsheetApp.openById("enter your cchredsheet url here"); 
     var sheet = ss.getSheetByName("Sheet1"); // or your sheet name
 
     // Get submitted values
