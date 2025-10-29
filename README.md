@@ -7,6 +7,19 @@ Since this is a regstration website it need a Backend. But I use a appscript to 
 
 But when I use Speedsheet as a storage for data there is an time delay on when someone submite data throgh form and get the Submission Succesfull message on the web So in order to prevent multiple entry I use a loader animation to the submite button 
 
+## 🧩 Data Flow Summary
+
+```text
+[ User Form Submission ]
+        ↓
+ [ JavaScript fetch() ]
+        ↓
+ [ Google Apps Script Web App ]
+        ↓
+ [ Google Sheet Storage ]
+```
+
+
 
 ### Main Interface
 ![main_ing](img/highsec_web.png)
